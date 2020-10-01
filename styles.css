@@ -151,3 +151,77 @@ h1 {
   font-size: 1rem;
 }
 
+/* Media Queries that deal with Responsive Screen Sizes */
+/* Media Query for Devices having width maximum as 320px such as Iphone SE */
+@media (max-width:320px)
+{
+  /* The Player 1 Scoreboard is Adjusted */
+  #player1
+  {
+    margin-left: 60px;
+  }
+
+  /* The Player 2 Scoreboard is Adjusted */
+  #player2
+  {
+    margin-top: 92px;
+    margin-right: 55px;
+    margin-bottom: 45px;        /* Added so that there is a gap between the Tic-tac-toe board and scoreboard of Player 2 */
+  }
+
+  /* The Tic-tac-toe board background is set to Transparent and its adjusted to the center of screen here */
+  #board
+  {
+    background-color: transparent;
+    padding-left: 24px;
+  }
+
+  /* The Margin of Cells within the Board is set from here */
+  .row
+  {
+   margin-right: -15px;
+   margin-left: -15px;
+  }
+}
+
+/* Media Query for Screen Size greater than 768px i.e Ipad */
+@media (min-width:768px)
+{
+  /* The 'Tic-Tac-Toe' Text is Adjusted below the Board simply for making it more readable and cool */
+  .start-menu h1
+  {
+    padding-top: 130px;
+  }
+}
+
+/* Media Query for Screen Size between 321px and 767px i.e Galaxy S5 or Pixel 2 */ 
+@media (min-width:321px) and (max-width:767px)
+{
+  /* The Margin of the Cells of the Board is adjusted here */
+  .row
+  {
+    margin-right: -133px;
+    margin-left: -15px;
+  }
+
+  /* The Player 2 Scoreboard is adjusted from here */
+  #player2
+  {
+    margin-right: 58px;
+    margin-top: 123px;
+    margin-bottom: 35px;
+  }
+
+  /* The Player 1 Scoreboard is adjusted from here */
+  #player1
+  {
+    margin-left:96px;
+  }
+
+  /* The Tic-Tac-Toe Board background is changed and Padding is added to center the Board for the Screen */
+  #board
+  {
+    padding-left: 21px;
+    background-color: transparent;
+  }
+}
